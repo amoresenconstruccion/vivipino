@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <link rel="canonical" href="/" />
+  </head>
+  <body>
+    <script>
+      // GitHub Pages SPA fallback: redirect any 404 to root
+      var redirectTo = '/';
+      if (location.search) {
+        var params = new URLSearchParams(location.search);
+        var p = params.get('p');
+        if (p) redirectTo = p;
+      }
+      location.replace(redirectTo);
+    </script>
+  </body>
+</html>
